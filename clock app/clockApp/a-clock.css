@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.clock {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.number {
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    border: 2px solid black;
+
+}
+
+.center-dot {
+    position: absolute;
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.hour, .minut, .scond {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    
+
+}
+
+.hour {
+    position: absolute;
+    height: 100px;
+    width: 8px;
+    background-color: black;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+}
+
+.minut {
+    position: absolute;
+    height: 120px;
+    width: 4px;
+    background-color: white;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+}
+
+.scond {
+    position: absolute;
+    height: 140px;
+    width: 2px;
+    background-color: yellow;transform: rotate(0deg);
+    transform-origin: bottom;
+}
